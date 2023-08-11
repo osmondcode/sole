@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaHome, FaTimes, FaSearch, FaMusic, FaCompactDisc, FaUserTie, FaFire } from 'react-icons/fa'
+import { FaHome, FaTimes, FaSearch, FaCompactDisc, FaUserTie, FaFire } from 'react-icons/fa'
 import { Link } from "react-router-dom";
 
 const resSideBar = ({handleSideNav}) => {
@@ -16,7 +16,6 @@ const resSideBar = ({handleSideNav}) => {
             <div className="w-full px-4 flex items-start justify-center flex-col h-1/2 gap-[15px] text-[1.3rem] mt-[2vh]">
                 <Link to='/' className="text-green-500 w-1/2 flex items-center justify-start gap-[10px]"><FaHome/> Home</Link>
                 <Link className="w-1/2 flex items-center justify-start gap-[10px]"><FaSearch/> Search</Link>
-                <Link to='/playlist' className="w-1/2 flex items-center justify-start gap-[10px]"><FaMusic/> PlayList</Link>
                 <Link to='/genre' className="w-1/2 flex items-center justify-start gap-[10px]"><FaCompactDisc/> Genres</Link>
                 <Link to='/artistPage' className="w-1/2 flex items-center justify-start gap-[10px]"><FaUserTie/> Artists</Link>
                 <Link className="w-1/2 flex items-center justify-start gap-[10px]"><FaFire/> Trending</Link>

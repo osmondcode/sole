@@ -108,7 +108,11 @@ const Bottomplayer = ({trendingSongs, audioRef, setCurrentSong, currentSong, han
                 </span>
                 <span>
                   <button className='w-[40px] h-[40px] flex items-center justify-center rounded-xl bg-white/10' onClick={playBtn}>
-                    <FaPlay className='w-[20px] h-[20px]'/>
+                  {isPlaying ? 
+                <FaPlay className='w-[20px] h-[20px]'/>
+                :
+                <FaPause className='w-[20px] h-[20px]'/>
+              }
                   </button>
                 </span>
           </div>

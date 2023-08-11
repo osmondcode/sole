@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaCompactDisc, FaFire, FaHome, FaMusic, FaSearch, FaTimes, FaUserTie } from 'react-icons/fa'
+import { FaCompactDisc, FaFire, FaHome, FaSearch, FaTimes, FaUserTie } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 
 const pageSideBar = ({handleSideBar}) => {
@@ -12,10 +12,9 @@ const pageSideBar = ({handleSideBar}) => {
         <div className="w-full px-4 flex items-start justify-center flex-col h-1/2 gap-[15px] text-[1.3rem] mt-[2vh]">
             <Link to='/' className="w-1/2 flex items-center justify-start gap-[10px]"><FaHome/> Home</Link>
             <Link className="w-1/2 flex items-center justify-start gap-[10px]"><FaSearch/> Search</Link>
-            <Link to='/playlist' className="w-1/2 flex items-center justify-start gap-[10px]"><FaMusic/> PlayList</Link>
-            <Link className="text-green-500 w-1/2 flex items-center justify-start gap-[10px]"><FaCompactDisc/> Genres</Link>
-            <Link className="w-1/2 flex items-center justify-start gap-[10px]"><FaUserTie/> Artists</Link>
-            <Link className="w-1/2 flex items-center justify-start gap-[10px]"><FaFire/> Trending</Link>
+            <Link to='/genre' className="text-green-500 w-1/2 flex items-center justify-start gap-[10px]"><FaCompactDisc/> Genres</Link>
+            <Link to='/artistPage' className="w-1/2 flex items-center justify-start gap-[10px]"><FaUserTie/> Artists</Link>
+            <Link to='/trending' className="w-1/2 flex items-center justify-start gap-[10px]"><FaFire/> Trending</Link>
         </div>
     </div>
 </div>
